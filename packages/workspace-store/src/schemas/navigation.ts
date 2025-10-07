@@ -80,6 +80,46 @@ export type TraversedWebhook = BaseSchema & {
   isDeprecated?: boolean
 }
 
+export const TraversedAsyncApiOperationSchemaDefinition = compose(
+  NavigationBaseSchemaDefinition,
+  Type.Object({
+    type: Type.Literal('asyncapi-operation'),
+    ref: Type.String(),
+    action: Type.Union([Type.Literal('publish'), Type.Literal('subscribe')]),
+    channel: Type.String(),
+    isDeprecated: Type.Optional(Type.Boolean()),
+  }),
+)
+
+export type TraversedAsyncApiOperation = BaseSchema & {
+  type: 'asyncapi-operation'
+  ref: string
+  action: 'publish' | 'subscribe'
+  channel: string
+  isDeprecated?: boolean
+}
+
+export const TraversedChannelSchemaDefinition = compose(
+  NavigationBaseSchemaDefinition,
+  Type.Object({
+    type: Type.Literal('channel'),
+    name: Type.String(),
+    description: Type.Optional(Type.String()),
+    children: Type.Optional(Type.Array(TraversedEntryObjectRef)),
+    isGroup: Type.Boolean(),
+    xKeys: Type.Optional(Type.Record(Type.String(), Type.Unknown())),
+  }),
+)
+
+export type TraversedChannel = BaseSchema & {
+  type: 'channel'
+  name: string
+  description?: string
+  children?: TraversedEntry[]
+  isGroup: boolean
+  xKeys?: Record<string, unknown>
+}
+
 export const TraversedTagSchemaDefinition = compose(
   NavigationBaseSchemaDefinition,
   Type.Object({
@@ -109,6 +149,8 @@ export const TraversedEntrySchemaDefinition = Type.Union([
   TraversedSchemaSchemaDefinition,
   TraversedTagSchemaDefinition,
   TraversedWebhookSchemaDefinition,
+  TraversedAsyncApiOperationSchemaDefinition,
+  TraversedChannelSchemaDefinition,
 ])
 
 export type TraversedEntry =
@@ -117,3 +159,5 @@ export type TraversedEntry =
   | TraversedSchema
   | TraversedTag
   | TraversedWebhook
+  | TraversedAsyncApiOperation
+  | TraversedChannel
