@@ -13,4 +13,4 @@ RUN npm install -g npm@latest
 RUN npx -y playwright@$PLAYWRIGHT_VERSION install --with-deps
 RUN chmod -R 777 /ms-playwright
 
-CMD npx -y playwright run-server --port ${PORT} --host 0.0.0.0
+CMD npx -y playwright@$PLAYWRIGHT_VERSION run-server --port ${PORT} --host 0.0.0.0
