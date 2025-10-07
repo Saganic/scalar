@@ -1,5 +1,33 @@
 # @scalar/api-reference
 
+## 1.38.0
+
+### Minor Changes
+
+- 1e01464: Adds a new ApiReferenceConfigWithSource type and make the base ApiReferenceConfig type agnostic of any document sources.
+
+### Patch Changes
+
+- debdcf6: Correctly handle additionalProperties when set to false
+- a747da6: feat(components): overhaul and polish ScalarButton ✨
+- Updated dependencies [debdcf6]
+- Updated dependencies [5d99cad]
+- Updated dependencies [e0cdd9a]
+- Updated dependencies [a747da6]
+- Updated dependencies [1e01464]
+- Updated dependencies [c69cb71]
+- Updated dependencies [b998d57]
+  - @scalar/api-client@2.8.0
+  - @scalar/oas-utils@0.5.1
+  - @scalar/workspace-store@0.17.0
+  - @scalar/snippetz@0.5.0
+  - @scalar/components@0.14.41
+  - @scalar/types@0.3.1
+  - @scalar/openapi-parser@0.22.1
+  - @scalar/openapi-upgrader@0.1.1
+  - @scalar/themes@0.13.21
+  - @scalar/code-highlight@0.2.0
+
 ## 1.37.0
 
 ### Minor Changes

@@ -1,5 +1,20 @@
 # @scalar/workspace-store
 
+## 0.17.0
+
+### Minor Changes
+
+- 5d99cad: feat: operation block
+
+### Patch Changes
+
+- Updated dependencies [e0cdd9a]
+- Updated dependencies [1e01464]
+  - @scalar/snippetz@0.5.0
+  - @scalar/types@0.3.1
+  - @scalar/openapi-upgrader@0.1.1
+  - @scalar/code-highlight@0.2.0
+
 ## 0.16.2
 
 ### Patch Changes

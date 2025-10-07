@@ -1,5 +1,16 @@
 # @scalar/scripts
 
+## 0.0.42
+
+### Patch Changes
+
+- 1e01464: Adds a new ApiReferenceConfigWithSource type and make the base ApiReferenceConfig type agnostic of any document sources.
+- Updated dependencies [debdcf6]
+- Updated dependencies [a747da6]
+- Updated dependencies [c69cb71]
+  - @scalar/oas-utils@0.5.1
+  - @scalar/components@0.14.41
+
 ## 0.0.41
 
 ### Patch Changes

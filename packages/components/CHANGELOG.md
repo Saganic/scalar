@@ -1,5 +1,16 @@
 # @scalar/components
 
+## 0.14.41
+
+### Patch Changes
+
+- a747da6: feat(components): overhaul and polish ScalarButton ✨
+- c69cb71: fix(components): update list styles to match guides
+- Updated dependencies [debdcf6]
+  - @scalar/oas-utils@0.5.1
+  - @scalar/themes@0.13.21
+  - @scalar/code-highlight@0.2.0
+
 ## 0.14.40
 
 ### Patch Changes

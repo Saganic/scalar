@@ -1,5 +1,15 @@
 # @scalar/aspnetcore
 
+## 2.8.11
+
+### Patch Changes
+
+- cde3c0f: feat: support showOperationId configuration
+- Updated dependencies [debdcf6]
+- Updated dependencies [a747da6]
+- Updated dependencies [1e01464]
+  - @scalar/api-reference@1.38.0
+
 ## 2.8.10
 
 ### Patch Changes
